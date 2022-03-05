@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piece of Cake</title>
+</head>
+<body>
+    <section id="intro" class="bg-yellow box-container">
+        <div class="container zindex10">
+            <div class="row justify-content-center pt-5">
+                <div class="col-12 col-sm-5">
+                    <img src="assets/img/PoC-logo.png" alt="logo Pasteleria" class="d-block m-auto w-75">
+                </div>
+            </div>
+            <div class="row justify-content-center pb-5">
+                <div class="col-12 col-sm-10">
+                    <h1 class="text-pastel text-center txt-steelblue">¡Bienvenid@!</h1>
+                    <p class="text-regular text-center mt-4">Somos una pastelería dedicada a la creación de sueños y los convertimos en pasteles. <br>
+                    Aquí podrás crear de cero tu pastel ideal, con los ingredientes y sabores que más te gusten. 
+                    </p>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <a href="#crear" class="btn btn-crear">Crea tu Pastel</a>
+                </div>
+            </div>
+        </div>
+        <div class="cakes-brown"></div>
+    </section>
+
+    <section id="galeria" class="bg-linen box-container">
+        <div class="container pt-5 zindex10">
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-3">
+                    <img src="assets/img/pastel1.png" alt="Pastel" class="w-100 galeria">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <img src="assets/img/pastel2.png" alt="Pastel" class="w-100 galeria">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <img src="assets/img/pastel3.png" alt="Pastel" class="w-100 galeria">
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5 pb-5">
+                <div class="col-12 col-sm-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6118313504296!2d-99.19437817076864!3d19.436271263858334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba5933e239152888!2zMTnCsDI2JzEwLjYiTiA5OcKwMTEnMzcuOCJX!5e0!3m2!1ses!2smx!4v1646329577480!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-12 col-sm-5">
+                    <h3 class="txt-steelblue text-regular">Nos encontramos en:</h3>
+                    <p class="txt-steelblue text-regular">Eugenio Sue 317, Polanco,<br> Polanco IV Secc, Miguel Hidalgo,<br> 11550 Ciudad de México, CDMX</p>
+                    <p class="txt-steelblue text-regular">Abrimos de Martes a Domingo <br>De 9am a 8pm</p>
+                    <p class="text-regular txt-steelblue">Teléfono: <a href="tel:55158854321">55158854321</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="cakes-brown"></div> -->
+    </section>
+
+    <section id="crear" class="bg-steelblue box-container">
+        <div class="container zindex10">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h2 class="text-center text-pastel txt-linen">Crea Tu Pastel</h2>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="row justify-content-around pt-4">
+                    <div class="col-12 col-sm-5">
+                        <div class="mb-3">
+                            <label for="NombreCliente" class="form-label txt-yellow text-regular">Nombre Completo</label>
+                            <input type="text" class="form-control" id="NombreCliente" name="NombreCliente">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label txt-yellow text-regular">Teléfono</label>
+                            <input type="number" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label txt-yellow text-regular">Correo Electrónico</label>
+                            <input type="number" class="form-control" id="correo" name="correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label txt-yellow text-regular">Descripción</label>
+                            <textarea name="descripcion" id="descripcion" class="textarea" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <div class="form-box bg-sky mt-4">
+                            <h5 class="txt-yellow text-regular">Selecciona los sabores:</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor1" name="sabor1" value="Fresa">
+                                        <label class="form-check-label" for="sabor1">Fresa  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor2" name="sabor2" value="Chocolate">
+                                        <label class="form-check-label" for="sabor2">Chocolate  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor3" name="sabor3" value="Vainilla">
+                                        <label class="form-check-label" for="sabor3">Vainilla  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor4" name="sabor4" value="Red Velvet">
+                                        <label class="form-check-label" for="sabor4">Red Velvet  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor5" name="sabor5" value="Limón">
+                                        <label class="form-check-label" for="sabor5">Limón  +$100</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor6" name="sabor6" value="Coco">
+                                        <label class="form-check-label" for="sabor6">Coco  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor7" name="sabor7" value="Chocolate Amargo">
+                                        <label class="form-check-label" for="sabor7">Chocolate Amargo  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor8" name="sabor8" value="Cajeta">
+                                        <label class="form-check-label" for="sabor8">Cajeta  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor9" name="sabor9" value="Naranja">
+                                        <label class="form-check-label" for="sabor9">Naranja  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="sabor10" name="sabor10" value="Nuez">
+                                        <label class="form-check-label" for="sabor10">Nuez  +$100</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-box bg-sky mt-5">
+                            <h5 class="txt-linen text-regular">Selecciona las decoraciones:</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco1" name="deco1" value="Fruta">
+                                        <label class="form-check-label" for="deco1">Fresa  +$50</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco2" name="deco2" value="Chocolate">
+                                        <label class="form-check-label" for="deco2">Chocolate  +$50</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco3" name="deco3" value="Nueces">
+                                        <label class="form-check-label" for="deco3">Nueces  +$50</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco4" name="deco4" value="Fondant">
+                                        <label class="form-check-label" for="deco4">Fondant  +$100</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco5" name="deco5" value="Flores">
+                                        <label class="form-check-label" for="deco5">Flores  +$150</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco6" name="deco6" value="Impresión">
+                                        <label class="form-check-label" for="deco6">Impresión  +$150</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco7" name="deco7" value="Dulces">
+                                        <label class="form-check-label" for="deco7">Dulces  +$50</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="deco8" name="deco8" value="Galletas">
+                                        <label class="form-check-label" for="deco8">Galletas  +$80</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-crear mt-5" value="Envia Pedido">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="cakes-yellow"></div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
